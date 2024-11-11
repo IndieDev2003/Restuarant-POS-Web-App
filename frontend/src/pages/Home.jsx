@@ -6,7 +6,7 @@ const Home = () => {
   return (
       <div className='flex w-full justify-between overflow-y-hidden'>
           {/* Recipes */}
-          <div className=''>
+          <div className=' px-3 min-w-fit'>
               {/* Meals Category */}
               <div className='flex flex-row gap-3 mt-2 ml-2'>
                   <p className='px-3 py-1 border shadow-md drop-shadow-md rounded-lg'>Starters</p>
@@ -17,7 +17,7 @@ const Home = () => {
                   <p className='px-3 py-1 border shadow-md drop-shadow-md rounded-lg'>Beverages</p>
               </div>
               {/* Meals */}
-              <div className='max-h-[82vh] my-2 mx-2 grid grid-cols-4  gap-2 overflow-y-scroll relative'>
+              <div className='max-h-[82vh] w-[800px]  my-2 mx-2 grid grid-cols-5   gap-2 overflow-y-scroll relative'>
                   <Meal/>
                   <Meal/>
                   <Meal/>
@@ -36,9 +36,10 @@ const Home = () => {
           </div>
 
           {/* Add Customer Orders */}
-          <div>
+          <div className='w-full min-w-[300px]'>
               <AddOrder/>
           </div>
+
     </div>
   )
 }
