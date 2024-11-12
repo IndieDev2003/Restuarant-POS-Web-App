@@ -1,8 +1,10 @@
-import React from "react";
 import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
+import Tables from "./pages/Tables";
 import Home from "./pages/Home";
-import Customers from "./pages/Customers";
+// import Customers from "./pages/Customers";
+
+import SelectTable from "./components/Table/SelectTable";
 
 const App = () => {
   return (
@@ -11,7 +13,9 @@ const App = () => {
       <div className="flex flex-row">
         <Sidebar />
         {/* <Home/> */}
-        <Customers/>
+        {/* <Customers/> */}
+        <Tables/>
+        {/* <SelectTable/> */}
       </div>
     </div>
   );

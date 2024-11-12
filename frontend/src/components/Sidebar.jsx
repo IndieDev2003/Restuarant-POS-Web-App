@@ -1,4 +1,4 @@
-import React from 'react'
+
 
 import home from '../assets/home.svg'
 import customer from '../assets/customers.svg'

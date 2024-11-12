@@ -1,5 +1,3 @@
-import React from "react";
-
 const CustomerItem = () => {
   return (
     <div className="max-h-fit grid grid-cols-[0.5fr_5fr_1fr] items-center p-1 px-2 bg-gray-200 rounded-lg my-1">

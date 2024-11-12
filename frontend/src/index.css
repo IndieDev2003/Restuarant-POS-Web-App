@@ -14,9 +14,22 @@
   @apply bg-[#FFF2E8] border-[#FC8019] border
 }
 
+.active-btn{
+  @apply bg-[#FFF2E8] border-[#FC8019]
+}
+
 ::-webkit-scrollbar{
   display: none;
 }
 .orange{
   @apply bg-[#FC8019]
+}
+.text-orange{
+  
+    @apply text-[#FC8019]
+  
+}
+
+.select-table-size{
+  @apply bg-[#FFF2E8]
 }

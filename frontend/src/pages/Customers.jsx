@@ -1,4 +1,3 @@
-import React from 'react'
 
 import AddOrder from '../components/ui/AddOrder'
 import CustomerList from '../components/Customers/CustomerList'
