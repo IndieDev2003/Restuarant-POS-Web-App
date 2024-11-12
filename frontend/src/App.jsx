@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
 import Home from "./pages/Home";
+import Customers from "./pages/Customers";
 
 const App = () => {
   return (
@@ -9,7 +10,8 @@ const App = () => {
       <Navbar />
       <div className="flex flex-row">
         <Sidebar />
-        <Home/>
+        {/* <Home/> */}
+        <Customers/>
       </div>
     </div>
   );

@@ -8,9 +8,9 @@ import Checkout from "../modals/Checkout";
 
 const AddOrder = () => {
   return (
-    <div className="h-full w-[450px] border-l flex flex-col justify-between">
-      <div>
-        {/* upper */}
+    <div className="relative h-full w-full  border-l flex flex-col flex-grow-0 justify-between">
+      {/* upper */}
+      <div className="h-5/6 overflow-y-scroll">
         <div className="flex items-center justify-between py-2 border-b">
           <div className="flex items-center gap-2  pl-2">
             <img src={plus} className="h-5" alt="" />
@@ -25,17 +25,17 @@ const AddOrder = () => {
         </div>
 
         {/* Orders */}
-        <div className="px-2 py-2  w-full h-fit ">
+        <div className="px-2 py-2">
           <AddOrderOrder />
           <AddOrderOrder />
-          {/* <AddOrderOrder /> */}
+          <AddOrderOrder />
           {/* <AddOrderOrder /> */}
           <AddOrderOrder />
         </div>
       </div>
 
       {/* Checkout Section */}
-      <div>
+      <div className="h-fit mt-2">
         <Checkout />
       </div>
     </div>

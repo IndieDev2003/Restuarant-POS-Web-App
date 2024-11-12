@@ -17,7 +17,7 @@ const Home = () => {
                   <p className='px-3 py-1 border shadow-md drop-shadow-md rounded-lg'>Beverages</p>
               </div>
               {/* Meals */}
-              <div className='max-h-[82vh] w-[800px]  my-2 mx-2 grid grid-cols-5   gap-2 overflow-y-scroll relative'>
+              <div className='max-h-[82vh]  my-2 mx-2 grid grid-cols-5   gap-2 overflow-y-scroll relative'>
                   <Meal/>
                   <Meal/>
                   <Meal/>
@@ -36,7 +36,7 @@ const Home = () => {
           </div>
 
           {/* Add Customer Orders */}
-          <div className='w-full min-w-[300px]'>
+          <div className='w-[30vw] h-[90vh]'>
               <AddOrder/>
           </div>
 
