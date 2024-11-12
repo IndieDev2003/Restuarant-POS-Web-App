@@ -32,13 +32,37 @@ const Home = () => {
                   <Meal/>
                   <Meal />
                   
+                  <Meal/>
+                  <Meal/>
+                  <Meal/>
+                  <Meal/>
+                  <Meal/>
+                  <Meal/>
+                  <Meal />
+                  
+                  <Meal/>
+                  <Meal/>
+                  <Meal/>
+                  <Meal/>
+                  <Meal/>
+                  <Meal/>
+                  <Meal />
+                  
+                  <Meal/>
+                  <Meal/>
+                  <Meal/>
+                  <Meal/>
+                  <Meal/>
+                  <Meal/>
+                  <Meal />
+                  
               </div>
           </div>
 
           {/* Add Customer Orders */}
-          <div className='w-[30vw] h-[90vh]'>
-              <AddOrder/>
-          </div>
+          {/* <div className='w-[30vw] h-[90vh]'> */}
+              {/* <AddOrder/> */}
+          {/* </div> */}
 
     </div>
   )

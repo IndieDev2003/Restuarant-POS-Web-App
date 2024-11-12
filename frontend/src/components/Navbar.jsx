@@ -1,12 +1,13 @@
 import React from "react";
 
 import search_svg from "../assets/search.svg";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
     <div className="flex justify-between border-b-2 pb-2">
       {/* Left Side */}
-      <div className="flex  gap-3">
+      <Link to='/' className="flex  gap-3">
         <h2 className="text-2xl">Restro POS</h2>
         <div className="flex items-center bg-gray-300 rounded-full">
           <input
@@ -18,7 +19,7 @@ const Navbar = () => {
           />
           <img src={search_svg} className="h-6 px-2" alt="" />
         </div>
-      </div>
+      </Link>
 
       {/* Right Side */}
       <div>

@@ -10,10 +10,10 @@ const Customers = () => {
               <CustomerList/>
           </div>
 
-          {/* Checkout */}
+          {/* Checkout
           <div className='w-[30vw] h-[90vh]'>
               <AddOrder/>
-          </div>
+          </div> */}
     </div>
   )
 }

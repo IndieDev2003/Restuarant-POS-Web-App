@@ -15,7 +15,7 @@ const Tables = () => {
               <p className="cursor-pointer px-3 py-1 border shadow-md drop-shadow-md rounded-lg">Disabled</p>
       </div>
       {/* Tables Note */}
-      <div className='h-fit mt-10 flex w-[600px] justify-between gap-2 px-2'>
+      <div className='h-fit mt-5 flex w-[600px] justify-between gap-2 px-2'>
         <div className='flex flex-row items-center gap-1'>
           <img src={error} className='h-4' alt="" />
           <p>Tables visible are for 4-6 guests occupancy.</p>
@@ -24,7 +24,7 @@ const Tables = () => {
       </div>
 
       {/* Table Display */}
-      <div className='px-2 max-w-fit h-[64vh] grid grid-flow-dense sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 grid-cols-6 gap-2 mt-3 overflow-y-scroll'>
+      <div className='px-2  py-2 border border-b-0 rounded-se-lg  max-w-fit h-[66vh] grid grid-flow-dense sm:grid-cols-3 md:grid-cols-4 grid-cols-6 gap-2 mt-3 overflow-y-scroll'>
         <TableItem/>
         <TableItem/>
         <TableItem/>
