@@ -9,7 +9,7 @@ const SelectedCustomer = () => {
         alt=""
           />
           <div className="h-full flex flex-col px-4 py-3">
-              <p className="text-xl">Vincent Lobo <span>#9213724</span></p>
+              <p className="text-2xl">Vincent Lobo <span>#9213724</span></p>
               <p className="text-sm text-gray-600 font-medium">vincent.lobo@gmail.com</p>
               <p className="text-sm text-gray-600 font-medium">+1 123 456 7890</p>
           </div>
