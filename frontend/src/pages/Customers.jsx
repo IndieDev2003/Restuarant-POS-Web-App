@@ -7,7 +7,7 @@ const Customers = () => {
   return (
       <div className='flex'>
           {/* Customer Info */}
-          <div className='h-full w-[60vw] bg-gray-600'>
+          <div className='h-[90vh] w-[60vw] bg-gray-600'>
               <CustomerList/>
           </div>
 
