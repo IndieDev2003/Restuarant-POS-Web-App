@@ -1,16 +1,38 @@
+import { useEffect, useState } from "react";
 
-const TableItem = () => {
- 
+const TableItem = ({ state, tableNumber }) => {
+  // const [tableState, setTableState] = useState(state);
+
+  const [vacant, setVacant] = useState(false);
+  const [occupied, setOccupied] = useState(true);
+  const [orderOnHold, setOrderOnHold] = useState(false);
+
+  useEffect(() => {
+    if (state === "Vacant") {
+      setVacant(true);
+    } else if (state === "Occupied") {
+      setOccupied(true);
+    } else {
+      setOrderOnHold(true);
+    }
+  }, [vacant,occupied,orderOnHold]);
+
   return (
-    <div  className="">
-      <div  className="h-44 w-44 bg-gray-300 border-b-4 flex items-center justify-center border-lime-500 cursor-pointer rounded-lg relative">
+    <div className="">
+      <div
+        className={`h-44 w-44 bg-gray-300 border-b-4 flex items-center justify-center 
+        ${vacant ? "border-lime-500" : ""}
+        ${occupied ? "border-red-500" : ""}
+        ${orderOnHold ? "border-blue-500" : ""}
+         
+         cursor-pointer rounded-lg relative`}
+      >
         <div className="h-2/3 w-2/3 rounded-full bg-white"></div>
         <div className="absolute flex flex-col items-center leading-4">
-          <p className="text-xl font-medium">Table</p>
-          <p className="text-md text-gray-500">Vacant</p>
+          <p className="text-xl font-medium">Table {tableNumber}</p>
+          <p className="text-md text-gray-500">{!state ? "Vacant" : state}</p>
         </div>
-          </div>
-         
+      </div>
     </div>
   );
 };

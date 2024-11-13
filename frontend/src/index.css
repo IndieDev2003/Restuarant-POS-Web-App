@@ -30,6 +30,13 @@
   
 }
 
+.text-green{
+  @apply text-[#09AA29]
+}
+.bg-green{
+  @apply bg-[#09AA29]
+}
+
 .select-table-size{
   @apply bg-[#FFF2E8]
 }
