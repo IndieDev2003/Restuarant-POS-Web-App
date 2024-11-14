@@ -4,7 +4,7 @@ const TableItem = ({ state, tableNumber }) => {
   // const [tableState, setTableState] = useState(state);
 
   const [vacant, setVacant] = useState(false);
-  const [occupied, setOccupied] = useState(true);
+  const [occupied, setOccupied] = useState(false);
   const [orderOnHold, setOrderOnHold] = useState(false);
 
   useEffect(() => {
@@ -12,10 +12,12 @@ const TableItem = ({ state, tableNumber }) => {
       setVacant(true);
     } else if (state === "Occupied") {
       setOccupied(true);
-    } else {
+    } else if(state=== "Hold"){
       setOrderOnHold(true);
+    } else {
+      console.log('On Hold')
     }
-  }, [vacant,occupied,orderOnHold]);
+  }, [state,vacant,occupied,orderOnHold]);
 
   return (
     <div className="">

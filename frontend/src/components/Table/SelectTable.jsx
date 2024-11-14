@@ -1,5 +1,3 @@
-
-
 const SelectTable = () => {
   return (
     <div className="w-[750px] max-h-fit px-2 py-2 border rounded-lg relative">
@@ -32,9 +30,7 @@ const SelectTable = () => {
             Select and Place Order
           </button>
         </div>
-          </div>
-          
-          
+      </div>
     </div>
   );
 };

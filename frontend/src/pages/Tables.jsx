@@ -3,34 +3,42 @@ import error from "../assets/error_table.svg";
 import order from "../assets/orders.svg";
 import SelectTable from "../components/Table/SelectTable";
 import TableItem from "../components/Table/TableItem";
+import Vacant from "../components/Table/Vacant";
+import OnHold from "../components/Table/OnHold";
+import Occupied from "../components/Table/Occupied";
+import AllTables from "../components/Table/AllTables";
 
 const Tables = () => {
-  const [tableState, setTableState] = useState();
+  // const [tableState, setTableState] = useState();
 
-  const [vacant, setVacant] = useState(true);
+  const [vacant, setVacant] = useState(false);
   const [occupied, setOccupied] = useState(false);
   const [hold, setHold] = useState(false);
-
-  useEffect(() => {
-    if (vacant) {
-      setTableState("Vacant");
-    } else if (occupied) {
-      setTableState("Occupied");
-    } else {
-      setTableState("Hold");
-    }
-  }, [vacant, occupied, hold]);
+  const [allTables, setAllTables] = useState(true);
 
   return (
     <div className="h-full w-full  pt-2 flex flex-col justify-end">
       {/* Table Options */}
       <div className="w-fit flex flex-row gap-3 px-2">
-        <p className="cursor-pointer px-3 py-1 border shadow-md drop-shadow-md rounded-lg ">
+        <p
+          onClick={() => {
+            setAllTables(true),
+              setHold(false),
+              setOccupied(false),
+              setVacant(false);
+          }}
+          className={`${
+            allTables ? "active" : ""
+          } cursor-pointer px-3 py-1 border shadow-md drop-shadow-md rounded-lg `}
+        >
           All Tables
         </p>
         <p
           onClick={() => {
-            setHold(false), setOccupied(false), setVacant(true);
+            setAllTables(false),
+              setHold(false),
+              setOccupied(false),
+              setVacant(true);
           }}
           className={`${
             vacant ? "active" : ""
@@ -40,7 +48,10 @@ const Tables = () => {
         </p>
         <p
           onClick={() => {
-            setHold(false), setOccupied(true), setVacant(false);
+            setHold(false),
+              setOccupied(true),
+              setVacant(false),
+              setAllTables(false);
           }}
           className={`${
             occupied ? "active" : ""
@@ -50,7 +61,10 @@ const Tables = () => {
         </p>
         <p
           onClick={() => {
-            setHold(true), setOccupied(false), setVacant(false);
+            setHold(true),
+              setOccupied(false),
+              setVacant(false),
+              setAllTables(false);
           }}
           className={`${
             hold ? "active" : ""
@@ -65,14 +79,25 @@ const Tables = () => {
           <img src={error} className="h-4" alt="" />
           <p>Tables visible are for 4-6 guests occupancy.</p>
         </div>
-        <p className="text-orange font-medium cursor-pointer">
+        <p
+          onClick={() => {
+            setAllTables(true),
+              setHold(false),
+              setOccupied(false),
+              setVacant(false);
+          }}
+          className="text-orange font-medium cursor-pointer"
+        >
           Show All Tables
         </p>
       </div>
 
       {/* Table Display */}
-      <div className="px-2  py-2 border border-b-0 rounded-se-lg w-fit  h-[66vh] grid grid-cols-4 gap-2 mt-3 overflow-y-scroll">
-        <TableItem tableNumber={43} state={tableState} />
+      <div className="h-[66vh] overflow-y-scroll">
+        {allTables ? <AllTables /> : ""}
+        {vacant ? <Vacant /> : <></>}
+        {hold ? <OnHold /> : <></>}
+        {occupied ? <Occupied /> : <></>}
       </div>
 
       {/* Placing Table Order */}

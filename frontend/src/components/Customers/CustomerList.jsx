@@ -7,13 +7,7 @@ import SelectedCustomer from "./SelectedCustomer";
 const CustomerList = () => {
   return (
     <div className="max-h-full overflow-y-scroll relative">
-      {/* Heading */}
-      <div className="h-fit flex items-center justify-between px-4 py-5 w-full bg-white text-white">
-        <h2 className="text-xl font-medium text-black">Customers</h2>
-        <p className="text-lg  px-3 py-1 orange rounded-lg">
-          + Add New Customer
-        </p>
-      </div>
+      
 
       {/* List */}
       <div className="px-3 pt-1 max-h-[80%] bg-white my-2 mx-2 rounded-lg">

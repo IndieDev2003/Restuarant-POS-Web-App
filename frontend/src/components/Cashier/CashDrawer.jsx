@@ -3,47 +3,47 @@ import React from "react";
 const CashDrawer = () => {
   return (
     <div className="h-fit ">
-      <h2 className="text-2xl my-4">Drawer Amount Summary</h2>
-      <div className="pl-4 w-[800px] border-b bg-slate-200 rounded-lg">
-        <div className="flex flex-row justify-between text-lg px-2 py-2 rounded-lg">
+      <h2 className="text-2xl my-4 ">Drawer Amount Summary</h2>
+      <div className="pl-4 w-[800px] px-2 py-3 border-b bg-slate-200 rounded-lg">
+        <div className="flex flex-row justify-between text-lg px-2 py-1 rounded-lg">
           <p>Opening Drawer Amount</p>
           <input
             type="number"
             min={0}
-            className="bg-transparent px-2 outline-none text-md"
+            className="bg-transparent px-2 outline-none text-md bg-white rounded-lg py-1"
             name=""
             id=""
             placeholder="Amount..."
           />
         </div>
-        <div className="flex flex-row justify-between text-lg px-2 py-2 rounded-lg">
+        <div className="flex flex-row justify-between text-lg px-2 py-1 rounded-lg">
           <p>Cash Payment Sale</p>
           <input
             type="number"
             min={0}
-            className="bg-transparent px-2 outline-none text-md"
+            className="bg-transparent px-2 outline-none text-md bg-white rounded-lg py-1"
             name=""
             id=""
             placeholder="Amount..."
           />
         </div>
-        <div className="flex flex-row justify-between text-lg px-2 py-2 rounded-lg">
+        <div className="flex flex-row justify-between text-lg px-2 py-1  rounded-lg">
           <p>Other Payment Sale</p>
           <input
             type="number"
             min={0}
-            className="bg-transparent px-2 outline-none text-md"
+            className="bg-transparent px-2 outline-none text-md rounded-md bg-white py-1"
             name=""
             id=""
             placeholder="Amount..."
           />
         </div>
-        <div className="flex flex-row justify-between text-lg px-2 py-2 rounded-lg">
+        <div className="flex flex-row justify-between text-lg px-2 py-1 rounded-lg">
           <p>Expected Drawer Amount</p>
           <input
             type="number"
             min={0}
-            className="bg-transparent px-2 outline-none text-md"
+            className="bg-transparent px-2 outline-none text-md rounded-md bg-white py-1"
             name=""
             id=""
             placeholder="Amount..."

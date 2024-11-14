@@ -19,13 +19,13 @@ const App = () => {
   
 
   return (
-    <div className="pt-4 px-2">
+    <div className="pt-4 px-2 ">
       <Navbar />
-      <div className="h-[90vh] flex flex-row justify-between">
+      <div className="h-[91vh] flex flex-row justify-between ">
         <div className="flex flex-row">
           <Sidebar />
           <div className="w-fit">
-            <Routes>
+            <Routes className=''>
               <Route path="/" element={<Home />} />
               <Route path="/customer" element={<Customers />} />
               <Route path="/orders" element={<Order />} />
