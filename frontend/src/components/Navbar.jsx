@@ -14,10 +14,10 @@ const Navbar = () => {
             type="text"
             name=""
             placeholder="Search Products....."
-            className="outline-none bg-transparent px-3 py-1"
+            className="text-sm outline-none bg-transparent px-3 "
             id=""
           />
-          <img src={search_svg} className="h-6 px-2" alt="" />
+          <img src={search_svg} className="h-5 px-2" alt="" />
         </div>
       </Link>
 

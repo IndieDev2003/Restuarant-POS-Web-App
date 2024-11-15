@@ -11,6 +11,7 @@ import { Route, Routes, useLocation } from "react-router-dom";
 
 
 import Cashier from "./pages/Cashier";
+import NotImplemented from "./pages/NotImplemented";
 
 const App = () => {
   const url = useLocation();
@@ -31,6 +32,8 @@ const App = () => {
               <Route path="/orders" element={<Order />} />
               <Route path="/table" element={<Tables />} />
               <Route path="/cashier" element={<Cashier />} />
+              <Route path="/reports" element={<NotImplemented />} />
+              <Route path="/settings" element={<NotImplemented />} />
             </Routes>
           </div>
         </div>

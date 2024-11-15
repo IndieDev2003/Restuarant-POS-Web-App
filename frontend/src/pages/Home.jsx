@@ -1,32 +1,98 @@
 import { useLocation } from "react-router-dom";
 import Meal from "../components/modals/Meal";
 import AddOrder from "../components/ui/AddOrder";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 const Home = () => {
- 
+  const [starter, setStarter] = useState(true);
+  const [breakfast, setBreakfast] = useState();
+  const [lunch, setLunch] = useState();
+  const [supper, setSupper] = useState();
+  const [deserts, setDeserts] = useState();
+  const [beverages, setBeverages] = useState();
+
   return (
     <div className="flex w-full justify-between overflow-y-hidden">
       {/* Recipes */}
-      <div className=" px-3 min-w-fit">
+      <div className=" px-3 min-w-fit shadow-lg">
         {/* Meals Category */}
-        <div className="flex flex-row gap-3 mt-2 ml-2">
-          <p className="px-3 py-1 border shadow-md drop-shadow-md rounded-lg">
+        <div className="flex flex-row gap-3 mt-2 ml-2 ">
+          <p
+            onClick={() => {
+              setStarter(true),
+                setBeverages(false),
+                setBreakfast(false),
+                setDeserts(false),
+                setLunch(false),
+                setSupper(false);
+            }}
+            className={`${starter?'active':''} px-3 py-1 border shadow-md drop-shadow-md rounded-lg`}
+          >
             Starters
           </p>
-          <p className="px-3 py-1 border shadow-md drop-shadow-md rounded-lg">
+          <p
+            onClick={() => {
+              setStarter(false),
+                setBeverages(false),
+                setBreakfast(true),
+                setDeserts(false),
+                setLunch(false),
+                setSupper(false);
+            }}
+            className={`${breakfast?'active':''} px-3 py-1 border shadow-md drop-shadow-md rounded-lg`}
+          >
             Breakfast
           </p>
-          <p className="px-3 py-1 border shadow-md drop-shadow-md rounded-lg active-btn">
+          <p
+            onClick={() => {
+              setStarter(false),
+                setBeverages(false),
+                setBreakfast(false),
+                setDeserts(false),
+                setLunch(true),
+                setSupper(false);
+            }}
+            className={`${lunch?'active':''} px-3 py-1 border shadow-md drop-shadow-md rounded-lg`}
+          >
             Lunch
           </p>
-          <p className="px-3 py-1 border shadow-md drop-shadow-md rounded-lg">
+          <p
+            onClick={() => {
+              setStarter(false),
+                setBeverages(false),
+                setBreakfast(false),
+                setDeserts(false),
+                setLunch(false),
+                setSupper(true);
+            }}
+            className={`${supper?'active':''} px-3 py-1 border shadow-md drop-shadow-md rounded-lg`}
+          >
             Supper
           </p>
-          <p className="px-3 py-1 border shadow-md drop-shadow-md rounded-lg">
+          <p
+            onClick={() => {
+              setStarter(false),
+                setBeverages(false),
+                setBreakfast(false),
+                setDeserts(true),
+                setLunch(false),
+                setSupper(false);
+            }}
+            className={`${deserts?'active':''} px-3 py-1 border shadow-md drop-shadow-md rounded-lg`}
+          >
             Desserts
           </p>
-          <p className="px-3 py-1 border shadow-md drop-shadow-md rounded-lg">
+          <p
+            onClick={() => {
+              setStarter(false),
+                setBeverages(true),
+                setBreakfast(false),
+                setDeserts(false),
+                setLunch(false),
+                setSupper(false);
+            }}
+            className={`${beverages?'active':''} px-3 py-1 border shadow-md drop-shadow-md rounded-lg`}
+          >
             Beverages
           </p>
         </div>

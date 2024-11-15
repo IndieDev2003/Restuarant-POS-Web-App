@@ -58,10 +58,10 @@ const Sidebar = () => {
 
               {/* Bottom Side */}
               <div className='mb-2 flex flex-col items-center gap-2 justify-center'>
-                  <div className='w-10 rounded-full p-2 bg-gray-300'>
+                  <div className='w-10 rounded-full p-2 bg-gray-300 cursor-pointer'>
                       <img src={avatar} className='object-cover' alt="" />
                   </div>
-                  <div className='w-10 rounded-full p-2 bg-gray-300'>
+                  <div className='w-10 rounded-full p-2 bg-gray-300 cursor-pointer'>
                       <img src={logout} className='object-cover' alt="" />
                   </div>
               </div>

@@ -64,7 +64,7 @@ function Order() {
             </h2>
             <div className="w-max flex flex-row items-center gap-1 px-3 py-2 orange rounded-lg">
               <img src={reload} className="h-4" alt="" />
-              <h3 className="text-lg">Sync all Orders</h3>
+              <h3 className="text-lg cursor-pointer">Sync all Orders</h3>
             </div>
           </div>
 
