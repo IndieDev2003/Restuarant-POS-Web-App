@@ -26,7 +26,7 @@ const Home = () => {
                 setLunch(false),
                 setSupper(false);
             }}
-            className={`${starter?'active':''} px-3 py-1 border shadow-md drop-shadow-md rounded-lg`}
+            className={`${starter?'active':''} cursor-pointer px-3 py-1 border shadow-md drop-shadow-md rounded-lg`}
           >
             Starters
           </p>
@@ -39,7 +39,7 @@ const Home = () => {
                 setLunch(false),
                 setSupper(false);
             }}
-            className={`${breakfast?'active':''} px-3 py-1 border shadow-md drop-shadow-md rounded-lg`}
+            className={`${breakfast?'active':''} cursor-pointer px-3 py-1 border shadow-md drop-shadow-md rounded-lg`}
           >
             Breakfast
           </p>
@@ -52,7 +52,7 @@ const Home = () => {
                 setLunch(true),
                 setSupper(false);
             }}
-            className={`${lunch?'active':''} px-3 py-1 border shadow-md drop-shadow-md rounded-lg`}
+            className={`${lunch?'active':''} cursor-pointer px-3 py-1 border shadow-md drop-shadow-md rounded-lg`}
           >
             Lunch
           </p>
@@ -65,7 +65,7 @@ const Home = () => {
                 setLunch(false),
                 setSupper(true);
             }}
-            className={`${supper?'active':''} px-3 py-1 border shadow-md drop-shadow-md rounded-lg`}
+            className={`${supper?'active':''} cursor-pointer px-3 py-1 border shadow-md drop-shadow-md rounded-lg`}
           >
             Supper
           </p>
@@ -78,7 +78,7 @@ const Home = () => {
                 setLunch(false),
                 setSupper(false);
             }}
-            className={`${deserts?'active':''} px-3 py-1 border shadow-md drop-shadow-md rounded-lg`}
+            className={`${deserts?'active':''} cursor-pointer px-3 py-1 border shadow-md drop-shadow-md rounded-lg`}
           >
             Desserts
           </p>
@@ -91,7 +91,7 @@ const Home = () => {
                 setLunch(false),
                 setSupper(false);
             }}
-            className={`${beverages?'active':''} px-3 py-1 border shadow-md drop-shadow-md rounded-lg`}
+            className={`${beverages?'active':''} cursor-pointer px-3 py-1 border shadow-md drop-shadow-md rounded-lg`}
           >
             Beverages
           </p>
