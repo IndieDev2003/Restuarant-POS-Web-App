@@ -12,7 +12,7 @@ function Order() {
 
   return (
     <>
-      <div className="h-full px-2 py-1 bg-gray-200">
+      <div className="h-full w-max px-2 py-1 bg-gray-200">
         {/* Upper */}
         <div className="flex flex-row gap-3">
           <p
