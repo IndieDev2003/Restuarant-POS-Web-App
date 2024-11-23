@@ -48,13 +48,13 @@ const Checkout = () => {
       <div className={`${discountBox ?'absolute':'hidden'} bottom-14 right-full mr-2 shadow-sm shadow-black min-w-32 min-h-20 px-3 py-2 bg-white  border rounded-lg`}>
         <h2 >Add Discount</h2>
         <div className="my-2 flex gap-2">
-          <p className="px-3 py-2 bg-gray-300 rounded-sm font-semibold">%</p>
-          <p className="px-3 py-2 bg-gray-300 rounded-sm font-semibold">$</p>
-          <input type="text" placeholder="Amount" className="w-32 border px-2 py-1 rounded-lg outline-none"/>
+          <p className="cursor-pointer px-3 py-2 bg-gray-300 rounded-lg font-semibold">%</p>
+          <p className="cursor-pointer px-3 py-2 bg-gray-300 rounded-lg font-semibold">$</p>
+          <input type="text" placeholder="Amount" className="w-32 border-2 px-2 py-1 rounded-lg outline-none"/>
         </div>
         <div className="my-2 flex gap-2 w-full">
-          <p className="px-8 py-2 orange rounded-lg">Cancel</p>
-          <p className="px-8 py-2 bg-green-500 rounded-lg">Add</p>
+          <p onClick={()=>setDiscountBox(false)} className="cursor-pointer px-8 py-2 orange rounded-lg">Cancel</p>
+          <p className="cursor-pointer px-8 py-2 bg-green-500 rounded-lg">Add</p>
         </div>
       </div>
 
@@ -66,8 +66,8 @@ const Checkout = () => {
           <input type="text" placeholder="Add Coupon Code" className="w-full border px-2 py-1 rounded-lg outline-none"/>
         </div>
         <div className="my-2 flex gap-2 w-full">
-          <p className="px-8 py-2 orange rounded-lg">Cancel</p>
-          <p className="px-8 py-2 bg-green-500 rounded-lg">Add</p>
+          <p onClick={()=>setCouponBox(false)} className="cursor-pointer px-8 py-2 orange rounded-lg">Cancel</p>
+          <p className="cursor-pointer px-8 py-2 bg-green-500 rounded-lg">Add</p>
         </div>
       </div>
 
@@ -79,8 +79,8 @@ const Checkout = () => {
           <input type="text" placeholder="Add Note..." className="w-full border px-2 py-1 rounded-lg outline-none"/>
         </div>
         <div className="my-2 flex gap-2 w-full">
-          <p className="px-8 py-2 orange rounded-lg">Cancel</p>
-          <p className="px-8 py-2 bg-green-500 rounded-lg">Add</p>
+          <p onClick={()=>setAddNoteBox(false)} className="cursor-pointer px-8 py-2 orange rounded-lg">Cancel</p>
+          <p className="cursor-pointer px-8 py-2 bg-green-500 rounded-lg">Add</p>
         </div>
       </div>
     </div>

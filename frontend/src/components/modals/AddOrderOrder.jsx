@@ -9,7 +9,7 @@ const AddOrderOrder = () => {
     <div
       className={`${
         foodMenu ? "bg-slate-200 border-l-4 border-lime-400" : ""
-      } w-full h-fit py-2 px-2 my-1 rounded-lg transition-all ease-in-out`}
+      } w-full h-fit py-2 px-2 my-1 rounded-lg transition-all ease-in-out cursor-pointer`}
     >
       <div className="w-full grid grid-cols-[1fr_7fr_2fr_0.7fr] items-center justify-center">
         <img
@@ -25,7 +25,7 @@ const AddOrderOrder = () => {
         <p>$23.00</p>
         <img
           src={plus}
-          className="rotate-45 h-5 bg-gray-400 rounded-full p-0.5"
+          className="cursor-pointer rotate-45 h-5 bg-gray-400 rounded-full p-0.5"
           alt=""
         />
       </div>

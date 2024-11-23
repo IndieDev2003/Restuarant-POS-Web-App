@@ -75,7 +75,7 @@ function Order() {
               <input
                 type="text"
                 placeholder="Search Order Id"
-                className="flex-1 px-2 py-1"
+                className="flex-1 px-2 py-1 outline-none"
               />
               <button className="px-2 py-1 ">Search</button>
             </div>
