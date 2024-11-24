@@ -12,4 +12,4 @@ The App For Restuarants for creating and organizing the customer and orders.
 
 1.  React.js
 2.  Tailwind
-3.  SVGRepo for SVGs
+3.  SVGRepo for SVG
