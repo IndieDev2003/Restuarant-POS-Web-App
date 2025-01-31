@@ -6,7 +6,7 @@ export const Table = (req, res) => {
 
 export const AddTable = async  (req, res) => {
     const { tableNumber, capacity, status,premium } = req.body;
-    if (!tableNumber || !capacity || !status) return res.status(400).send({ success: false, message: "All fields are required" }) 
+    if (!tableNumber || !capacity ) return res.status(400).send({ success: false, message: "All fields are required" }) 
     try {
         const existingTable = await TableModel.findOne({ number: tableNumber })
         if (existingTable) return res.status(400).send({ success: false, message: "Table number already exists" })
