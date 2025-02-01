@@ -57,15 +57,16 @@ export const updateItem = async (req, res) => {
 };
 
 export const deleteItem = async (req, res) => {
-  const { name } = req.body;
+  const { id } = req.body;
 
-  if (!name)
+  if (!id)
     return res
       .status(400)
-      .send({ success: false, message: "name is required" });
+      .send({ success: false, message: "id is required" });
 
   try {
-    const item = await ItemModel.findOneAndDelete({ name });
+    // const item = await ItemModel.findByIdAndDelete(id)
+    const item = await ItemModel.findByIdAndDelete(id)
     if (!item)
       return res
         .status(404)

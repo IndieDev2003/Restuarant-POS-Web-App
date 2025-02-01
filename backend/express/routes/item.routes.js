@@ -6,7 +6,7 @@ const ItemRouter = express.Router();
 ItemRouter.get('/', Item)
 ItemRouter.post('/add-item',addItem)
 ItemRouter.get('/list-items', getAllItems)
-ItemRouter.delete('/delete-item', deleteItem)
+ItemRouter.post('/delete-item', deleteItem)
 ItemRouter.post('/update-item', updateItem)
 
 
