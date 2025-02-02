@@ -33,10 +33,10 @@ export const addItem = async (req, res) => {
 };
 
 export const updateItem = async (req, res) => {
-  const { name, price, category, image, description } = req.body;
+  const {_id, name, price, category, image, description } = req.body;
 
   try {
-    const item = await ItemModel.findOneAndUpdate(
+    const item = await ItemModel.findbyIdUpdate(
       { name },
       { name, price, category, image, description },
       { new: true }
